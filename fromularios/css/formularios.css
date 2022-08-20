@@ -1,10 +1,20 @@
-#frm-registration {
-  width: 40%;
+body {
   background-color: #eee3d9;
+}
+
+.container {
+  width: 80%;
+  margin: 20% auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+#frm-registration {
+  /* width: 40%; */
 }
 #frm-registration .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #frm-registration .col {
   display: flex;
@@ -13,4 +23,7 @@
 #frm-registration .row .col {
   display: flex;
   width: 45%;
+}
+button {
+  width: 100%;
 }
