@@ -45,9 +45,16 @@
   align-items: center;
   flex-direction: column;
 }
+.container-card .contenedor-img-personaje {
+  width: 250px;
+  background-color: blue;
+}
 .container-card .card-description {
   text-align: center;
   margin-top: -200px;
+}
+.container-card .banner-image {
+  width: 100%;
 }
 .container-card .card-title {
   color: #fff;
@@ -73,14 +80,14 @@
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
   .container-card {
-    max-width: 90%;
+    max-width: 95%;
     /* max-width: 540px; */
   }
 }
 
 @media (min-width: 768px) {
   .container-card {
-    max-width: 80%;
+    max-width: 95%;
     flex-direction: row;
     /* max-width: 720px; */
   }
@@ -88,14 +95,14 @@
 
 @media (min-width: 992px) {
   .container-card {
-    max-width: 80%;
+    max-width: 95%;
     /* max-width: 960px; */
   }
 }
 
 @media (min-width: 1200px) {
   .container-card {
-    max-width: 70%;
+    max-width: 80%;
     /* max-width: 1140px; */
   }
 }
