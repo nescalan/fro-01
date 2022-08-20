@@ -1,0 +1,16 @@
+#frm-registration {
+  width: 40%;
+  background-color: #eee3d9;
+}
+#frm-registration .row {
+  display: flex;
+  justify-content: space-around;
+}
+#frm-registration .col {
+  display: flex;
+  flex-direction: column;
+}
+#frm-registration .row .col {
+  display: flex;
+  width: 45%;
+}
