@@ -1,0 +1,21 @@
+:root {
+  --primary-background-color: #e5e5e5;
+  --secundary-background-color: #bc1e3a;
+
+  /* FONTS */
+  --lato: "Lato", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --font-color: #101822;
+
+  /* COLORS */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: var(--font-color);
+  font-family: var(--lato);
+}

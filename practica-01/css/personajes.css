@@ -1,0 +1,110 @@
+/***** MAIN *****/
+#sct-information {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://transformers.hasbro.com/images/brandsimg/headerMobile.png);
+  background-position: center;
+  background-size: 100cover;
+  background-repeat: no-repeat;
+}
+#sct-information h1 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+#sct-information span {
+  color: #fff;
+  font-size: 17px;
+  font-family: var(--lato);
+}
+/* SCTION INFORMATION - MEDIA QUERIES */
+@media (min-width: 992px) {
+  #sct-information {
+    background-image: url(https://transformers.hasbro.com/images/brandsimg/header.png);
+  }
+}
+
+/* SECTION CHARACTERS  */
+#sct-characters {
+  width: 100%;
+  margin-top: -20px;
+}
+.container-card {
+  width: 100%;
+  overflow: hidden;
+  margin: -75px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-card .card-description {
+  text-align: center;
+  margin-top: -200px;
+}
+.container-card .card-title {
+  color: #fff;
+  font-size: 30px;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px #07040c;
+}
+.container-card .card-subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--montserrat);
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px #07040c;
+}
+.card-optimus,
+.card-bumblebee,
+.card-grimlock {
+  margin-bottom: 50px;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .container-card {
+    max-width: 90%;
+    /* max-width: 540px; */
+  }
+}
+
+@media (min-width: 768px) {
+  .container-card {
+    max-width: 80%;
+    flex-direction: row;
+    /* max-width: 720px; */
+  }
+}
+
+@media (min-width: 992px) {
+  .container-card {
+    max-width: 80%;
+    /* max-width: 960px; */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-card {
+    max-width: 70%;
+    /* max-width: 1140px; */
+  }
+}
+
+/* FOOTER */
+footer {
+  height: 20vh;
+  margin-top: 40px;
+  background-image: url(https://transformers.hasbro.com/images/BASE_en_us.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
