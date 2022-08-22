@@ -29,7 +29,7 @@
         <form id="frm-registration">
           <div class="row flex-row">
             <div class="col">
-              <label class="form-titles" for="first-name">First Name: </label>
+              <label class="form-titles" for="first-name">First Name </label>
               <input
                 class="form-input"
                 id="name"
@@ -39,7 +39,7 @@
               />
             </div>
             <div class="col">
-              <label class="form-titles" for="last-name">Last Name: </label>
+              <label class="form-titles" for="last-name">Last Name </label>
               <input
                 class="form-input"
                 id="lastname"
@@ -54,10 +54,52 @@
             <input
               class="form-input"
               id="email"
+              type="email"
+              class="form-input"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="row flex-col">
+            <label for="address" class="form-titles">Address Line 1</label>
+            <input
+              class="form-input"
+              id="address"
               type="text"
               class="form-input"
               placeholder="Email Address"
             />
+          </div>
+          <div class="row flex-row">
+            <div class="col col-40percent">
+              <label class="form-titles" for="first-name">City </label>
+              <input
+                class="form-input"
+                id="city"
+                type="text"
+                name="first-city"
+                placeholder="City"
+              />
+            </div>
+            <div class="col col-20percent">
+              <label class="form-titles" for="last-name">State </label>
+              <input
+                class="form-input"
+                id="lastname"
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="col col-20percent">
+              <label class="form-titles" for="last-name">Zip Code </label>
+              <input
+                class="form-input"
+                id="lastname"
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+              />
+            </div>
           </div>
         </form>
         <button type="submit">Register</button>

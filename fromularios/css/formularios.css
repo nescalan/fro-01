@@ -58,10 +58,10 @@ body {
 #frm-registration .col {
   display: flex;
   flex-direction: column;
+  width: 48%;
 }
 #frm-registration .row .col {
   display: flex;
-  width: 45%;
 }
 #frm-registration .form-titles {
   font-size: 14px;
@@ -74,6 +74,12 @@ body {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+}
+#frm-registration .col-40percent {
+  width: 40%;
+}
+#frm-registration .col-20percent {
+  width: 27%;
 }
 button {
   width: 100%;
