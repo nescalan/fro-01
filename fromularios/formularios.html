@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/reset.css" />
 
     <!-- 2. Estilos externos (tiografias de google, iconos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- 3. Estilos de la pagina -->
     <link rel="stylesheet" href="./css/formularios.css" />
@@ -16,20 +22,42 @@
   <body>
     <main>
       <section class="container">
-        <h2>KonnectConference</h2>
         <header>
-          <h3>Online event registration</h3>
+          <h2>KonnektConference</h2>
+          <h3>Online Event Registration</h3>
         </header>
         <form id="frm-registration">
-          <div class="row">
+          <div class="row flex-row">
             <div class="col">
-              <label for="first-name">First Name: </label>
-              <input type="text" name="first-name" id="name" />
+              <label class="form-titles" for="first-name">First Name: </label>
+              <input
+                class="form-input"
+                id="name"
+                type="text"
+                name="first-name"
+                placeholder="First Name"
+              />
             </div>
             <div class="col">
-              <label for="last-name">Last Name: </label>
-              <input type="text" name="last-name" id="lastname" />
+              <label class="form-titles" for="last-name">Last Name: </label>
+              <input
+                class="form-input"
+                id="lastname"
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+              />
             </div>
+          </div>
+          <div class="row flex-col">
+            <label for="email" class="form-titles">Email Address</label>
+            <input
+              class="form-input"
+              id="email"
+              type="text"
+              class="form-input"
+              placeholder="Email Address"
+            />
           </div>
         </form>
         <button type="submit">Register</button>
