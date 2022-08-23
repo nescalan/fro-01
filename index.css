@@ -1,0 +1,42 @@
+:root {
+  --istokWeb-font: "Istok Web", sans-serif;
+  --merriweatherSans-font: "Merriweather Sans", sans-serif;
+  --roboto-font: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--roboto-font);
+  font-weight: 400;
+  background-image: linear-gradient(
+    to right top,
+    #5d88db,
+    #518fdd,
+    #4695de,
+    #3c9bdd,
+    #36a0dc
+  );
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 70%;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.container h1 {
+  font-size: 30px;
+  font-family: var(--istokWeb-font);
+  font-weight: 700;
+}
+.container h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: var(--merriweatherSans-font);
+}
+.container ul {
+  margin-left: 30px;
+  line-height: 1.7;
+}
