@@ -3,13 +3,19 @@
   --Montserrat: "Montserrat", sans-serif;
   --CormorantGaramond: "Cormorant Garamond", serif;
   --HindMadurai: "Hind Madurai", sans-serif;
+
+  /* Colores */
+  --bgc-primary: #191919;
 }
 
 body {
   font-family: var(--HindMadurai);
+  box-sizing: border-box;
 }
+
+/* header */
 header {
-  background-color: #191919;
+  background-color: var(--bgc-primary);
 }
 .container {
   width: 80%;
@@ -55,7 +61,6 @@ header {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  /* font-size: 1rem; */
 }
 #hero #hero-header p span {
   padding-bottom: 1px;
@@ -63,8 +68,14 @@ header {
   border-bottom: 1px solid white;
 }
 #hero #hero-footer {
+  margin-top: 75px;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 992px) {
+  #hero #hero-footer {
+    margin-top: 0;
+  }
 }
 #hero #hero-footer #left {
   text-align: left;
@@ -77,4 +88,52 @@ header {
 }
 #hero #hero-footer #right img {
   padding-left: 10px;
+}
+
+/* MAIN */
+nav {
+  margin-top: 30px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: red;
+}
+nav #hamburger-menu {
+  display: none;
+}
+nav #hamburger-menu:checked ~ #navbar {
+  margin-left: 0;
+}
+nav .logo {
+  margin-left: 100px;
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  font-size: 25px;
+}
+nav .slogan {
+  display: none;
+}
+@media (min-width: 992px) {
+  nav .slogan {
+    display: block;
+  }
+}
+#navbar {
+  width: 100%;
+  margin-left: -120%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  background-color: var(--bgc-primary);
+}
+#navbar li {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+#navbar li a {
+  color: #fff;
+  font-family: var(--HindMadurai);
+  text-decoration: none;
 }
