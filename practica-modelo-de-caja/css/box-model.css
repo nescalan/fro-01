@@ -97,7 +97,6 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
-  background-color: red;
 }
 nav #hamburger-menu {
   display: none;
