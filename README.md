@@ -1,4 +1,4 @@
-# Repositorio para el curso "Desarrollo de la Interfaz Web"
+# Curso "Desarrollo de la Interfaz Web"
 
 [![Build Status](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOTDFGwgHpz2oENWbfqFMQTErcPLe6faotq0rH5TmgVPFit9CngBX8DvBp8M-zmGmPfv0&usqp=CAU)](https://nescalan.github.io/nelson-portfolio)
 
@@ -12,4 +12,5 @@ Trabajo: Práctica 04
 
 ## Semana 3: Git y Formularios
 
-Trabajo: Maquetació de un formulario
+Trabajo 1: Maquetació de un formulario
+Trabajo 2: Ejercicio introductorio CSS y Modelo de Cajas
