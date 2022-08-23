@@ -1,0 +1,77 @@
+:root {
+  /* Google Fonts */
+  --Montserrat: "Montserrat", sans-serif;
+  --CormorantGaramond: "Cormorant Garamond", serif;
+  --HindMadurai: "Hind Madurai", sans-serif;
+}
+
+body {
+  font-family: var(--HindMadurai);
+}
+header {
+  background-color: #191919;
+}
+.container {
+  width: 80%;
+  min-width: 350px;
+  margin: 0 auto;
+}
+#hero {
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #hero #hero-header {
+    max-width: 750px;
+  }
+}
+#hero #hero-header h1 {
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  font-size: 25px;
+}
+@media (min-width: 576px) {
+  #hero #hero-header h1 {
+    font-size: 30px;
+  }
+}
+#hero #hero-header h2 {
+  margin-top: 20px;
+  font-family: var(--CormorantGaramond);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.1;
+}
+@media (min-width: 576px) {
+  #hero #hero-header h2 {
+    font-size: 40px;
+  }
+}
+#hero #hero-header p {
+  margin-top: 20px;
+  font-family: var(--HindMadurai);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  /* font-size: 1rem; */
+}
+#hero #hero-header p span {
+  padding-bottom: 1px;
+  font-style: italic;
+  border-bottom: 1px solid white;
+}
+#hero #hero-footer {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+#hero #hero-footer #left {
+  text-align: left;
+}
+#hero #hero-footer #right {
+  text-align: right;
+  color: #6c6c6c;
+  display: flex;
+  align-items: center;
+}
