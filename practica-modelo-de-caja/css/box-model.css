@@ -170,22 +170,21 @@ nav .slogan {
   font-size: 22px;
   transition: 700ms;
   background-color: #fff;
-  /* border: 1px solid red; */
 }
 @media (min-width: 992px) {
   #navbar {
-    width: 55%;
+    width: 50%;
     position: static;
     margin-left: 0;
     display: flex;
     justify-content: end;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1200px) {
   #navbar {
-    width: 35%;
+    font-size: 1.5rem;
   }
 }
 #navbar li {
@@ -209,5 +208,61 @@ nav .slogan {
 /* SECTION ARTICLES */
 #sct-articles {
   margin-top: 60px;
-  background-color: red;
+}
+#start-ups {
+  font-family: var(--Montserrat);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  #start-ups {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  #start-ups {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 992px) {
+  #start-ups {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #start-ups {
+    font-size: 5rem;
+  }
+}
+#start-ups ul {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--HindMadurai);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  #start-ups ul {
+    width: 50%;
+    margin-left: auto;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  #start-ups ul {
+    width: 43%;
+    margin-left: auto;
+    font-size: 1.5rem;
+  }
+}
+#start-ups ul li a {
+  color: var(--bgc-primary);
+  text-decoration: none;
+}
+#start-ups ul li a span {
+  color: #fd4600;
 }
