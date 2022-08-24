@@ -13,23 +13,25 @@ body {
   box-sizing: border-box;
 }
 
-/* header */
+/* HEADER */
 header {
   background-color: var(--bgc-primary);
 }
 .container {
   width: 80%;
   min-width: 350px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 #hero {
-  padding: 20px 0;
-  margin: 60px auto;
+  padding: 100px 0 30px 0;
+  margin: 0px auto;
   color: #fff;
 }
 @media (min-width: 992px) {
   #hero {
     margin-top: 0;
+    padding: 20px 0;
   }
 }
 @media (min-width: 992px) {
@@ -97,18 +99,15 @@ header {
 
 /* MAIN - NAVBAR */
 nav {
-  max-width: 100%;
   height: 60px;
-  margin-top: 30px;
   display: flex;
   align-items: center;
   position: absolute;
-  top: -30px;
-  left: 30px;
-  /* background-color: red; */
+  top: 0px;
 }
 @media (min-width: 992px) {
   nav {
+    margin-top: 80px;
     position: static;
     justify-content: space-between;
   }
@@ -116,23 +115,34 @@ nav {
 nav #hamburger-menu {
   display: none;
 }
+nav #hamburger-menu:checked ~ #navbar {
+  margin-left: -30px;
+}
+nav .change-color {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
 @media (min-width: 992px) {
   nav label {
     display: none;
   }
 }
-nav #hamburger-menu:checked ~ #navbar {
-  margin-left: -29px;
-}
 nav .logo {
-  margin-left: 100px;
+  margin-left: 50%;
+  color: #fff;
   font-family: var(--Montserrat);
   font-weight: 700;
   font-size: 25px;
 }
+@media (min-width: 576px) {
+  nav .logo {
+    margin-left: 150%;
+  }
+}
 @media (min-width: 992px) {
   nav .logo {
     margin-left: 0;
+    color: var(--bgc-primary);
   }
 }
 nav .slogan {
@@ -140,15 +150,15 @@ nav .slogan {
 }
 @media (min-width: 992px) {
   nav .slogan {
-    display: block;
-    font-weight: 600;
-    font-size: 22px;
     display: none;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   nav .slogan {
     display: block;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--bgc-primary);
   }
 }
 #navbar {
@@ -159,17 +169,23 @@ nav .slogan {
   font-weight: 600;
   font-size: 22px;
   transition: 700ms;
-
   background-color: #fff;
+  /* border: 1px solid red; */
 }
 @media (min-width: 992px) {
   #navbar {
-    width: 50%;
+    width: 55%;
     position: static;
     margin-left: 0;
     display: flex;
     justify-content: end;
     align-items: center;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #navbar {
+    width: 35%;
   }
 }
 #navbar li {
@@ -189,4 +205,9 @@ nav .slogan {
 }
 #navbar li a img {
   width: 25px;
+}
+/* SECTION ARTICLES */
+#sct-articles {
+  margin-top: 60px;
+  background-color: red;
 }
