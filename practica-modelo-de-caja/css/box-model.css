@@ -270,12 +270,33 @@ nav .slogan {
 
 /* FOOTER */
 #footer {
-  height: 650px;
+  height: 10rem;
   background-image: url(../img/box-model-hero.png);
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
-
+@media (min-width: 576px) {
+  #footer {
+    min-width: 375px;
+    height: 21.85rem;
+  }
+}
+@media (min-width: 768px) {
+  #footer {
+    height: 28.8rem;
+  }
+}
+@media (min-width: 992px) {
+  #footer {
+    height: 37.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  #footer {
+    height: 45rem;
+  }
+}
 .hero-image {
   background-image: url("photographer.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
