@@ -7,7 +7,6 @@
   /* Colores */
   --bgc-primary: #191919;
 }
-
 body {
   font-family: var(--HindMadurai);
   box-sizing: border-box;
@@ -18,7 +17,7 @@ header {
   background-color: var(--bgc-primary);
 }
 .container {
-  width: 80%;
+  width: 90%;
   min-width: 350px;
   max-width: 1400px;
   margin: 0 auto;
@@ -99,6 +98,7 @@ header {
 
 /* MAIN - NAVBAR */
 nav {
+  width: 90%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -107,6 +107,7 @@ nav {
 }
 @media (min-width: 992px) {
   nav {
+    width: 100%;
     margin-top: 80px;
     position: static;
     justify-content: space-between;
@@ -116,7 +117,7 @@ nav #hamburger-menu {
   display: none;
 }
 nav #hamburger-menu:checked ~ #navbar {
-  margin-left: -30px;
+  margin-left: 0px;
 }
 nav .change-color {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
@@ -128,16 +129,11 @@ nav .change-color {
   }
 }
 nav .logo {
-  margin-left: 50%;
+  margin-left: auto;
   color: #fff;
   font-family: var(--Montserrat);
   font-weight: 700;
   font-size: 25px;
-}
-@media (min-width: 576px) {
-  nav .logo {
-    margin-left: 150%;
-  }
 }
 @media (min-width: 992px) {
   nav .logo {
@@ -147,33 +143,34 @@ nav .logo {
 }
 nav .slogan {
   display: none;
+  font-family: var(-HindMadurai);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--bgc-primary);
 }
 @media (min-width: 992px) {
   nav .slogan {
-    display: none;
+    display: block;
   }
 }
 @media (min-width: 1200px) {
   nav .slogan {
-    display: block;
-    font-weight: 600;
-    font-size: 22px;
-    color: var(--bgc-primary);
+    font-size: 1.4rem;
   }
 }
 #navbar {
-  width: 100%;
-  margin-left: -150%;
+  width: 53%;
+  margin-left: -250%;
   position: absolute;
   top: 60px;
   font-weight: 600;
   font-size: 22px;
-  transition: 700ms;
+  transition: 500ms;
   background-color: #fff;
 }
 @media (min-width: 992px) {
   #navbar {
-    width: 50%;
+    /* width: 50%; */
     position: static;
     margin-left: 0;
     display: flex;
@@ -184,7 +181,13 @@ nav .slogan {
 }
 @media (min-width: 1200px) {
   #navbar {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #navbar ul a {
+    /* width: 55%; */
+    width: 400px;
   }
 }
 #navbar li {
@@ -212,7 +215,7 @@ nav .slogan {
   margin-top: 60px;
 }
 #start-ups {
-  max-width: 1300px;
+  max-width: 1200px;
   font-family: var(--Montserrat);
   font-weight: 800;
   font-size: 1.3rem;
@@ -220,7 +223,7 @@ nav .slogan {
 }
 @media (min-width: 576px) {
   #start-ups {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 768px) {
@@ -235,7 +238,7 @@ nav .slogan {
 }
 @media (min-width: 1200px) {
   #start-ups {
-    font-size: 4.7rem;
+    font-size: 3.9rem;
   }
 }
 #start-ups ul {
@@ -255,13 +258,19 @@ nav .slogan {
     font-size: 1rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #start-ups ul {
-    width: 43%;
+    width: 55%;
     margin-left: auto;
-    font-size: 1.5rem;
   }
 }
+@media (min-width: 1200px) {
+  #start-ups ul {
+    width: 600px;
+    font-size: 1.4rem;
+  }
+}
+
 #start-ups ul li a {
   color: var(--bgc-primary);
   text-decoration: none;
