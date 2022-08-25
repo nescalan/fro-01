@@ -8,6 +8,7 @@
   --bgc-primary: #191919;
 }
 body {
+  color: var(--bgc-primary);
   font-family: var(--HindMadurai);
   box-sizing: border-box;
 }
@@ -146,7 +147,6 @@ nav .slogan {
   font-family: var(-HindMadurai);
   font-weight: 600;
   font-size: 1rem;
-  color: var(--bgc-primary);
 }
 @media (min-width: 992px) {
   nav .slogan {
@@ -284,7 +284,6 @@ nav .slogan {
 }
 #dobar-brand .left {
   width: 50%;
-  max-width: 1300px;
   color: #fd4600;
   font-family: var(--Montserrat);
   font-weight: 800;
@@ -311,7 +310,37 @@ nav .slogan {
     font-size: 4.7rem;
   }
 }
-
+#dobar-brand .rigth {
+  width: 89%;
+  margin-top: 32px;
+  margin-left: auto;
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: justify;
+}
+@media (min-width: 576px) {
+  #dobar-brand .rigth {
+    width: 87%;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #dobar-brand .rigth {
+    font-size: 1.65rem;
+  }
+}
+@media (min-width: 992px) {
+  #dobar-brand .rigth {
+    width: 89%;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #dobar-brand .rigth {
+    font-size: 3rem;
+  }
+}
 /* FOOTER */
 #footer {
   min-width: 375px;
