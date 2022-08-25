@@ -205,8 +205,10 @@ nav .slogan {
 #navbar li a img {
   width: 25px;
 }
-/* SECTION ARTICLES */
+
+/***** SECTION ARTICLES *****/
 #sct-articles {
+  min-width: 375px;
   margin-top: 60px;
 }
 #start-ups {
@@ -268,8 +270,42 @@ nav .slogan {
   color: #fd4600;
 }
 
+#dobar-brand {
+  margin-top: 60px;
+}
+#dobar-brand .left {
+  width: 50%;
+  max-width: 1300px;
+  color: #fd4600;
+  font-family: var(--Montserrat);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  #dobar-brand .left {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  #dobar-brand .left {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  #dobar-brand .left {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #dobar-brand .left {
+    font-size: 4.7rem;
+  }
+}
+
 /* FOOTER */
 #footer {
+  min-width: 375px;
   margin-top: 60px;
 }
 #footer img {
