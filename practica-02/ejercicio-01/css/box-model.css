@@ -1,0 +1,351 @@
+:root {
+  /* Google Fonts */
+  --Montserrat: "Montserrat", sans-serif;
+  --CormorantGaramond: "Cormorant Garamond", serif;
+  --HindMadurai: "Hind Madurai", sans-serif;
+
+  /* Colores */
+  --bgc-primary: #191919;
+}
+body {
+  color: var(--bgc-primary);
+  font-family: var(--HindMadurai);
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  background-color: var(--bgc-primary);
+}
+.container {
+  width: 90%;
+  min-width: 350px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#hero {
+  padding: 100px 0 30px 0;
+  margin: 0px auto;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #hero {
+    margin-top: 0;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-header {
+    max-width: 750px;
+    height: 425px;
+  }
+}
+#hero #hero-header h1 {
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  font-size: 25px;
+}
+@media (min-width: 576px) {
+  #hero #hero-header h1 {
+    font-size: 30px;
+  }
+}
+#hero #hero-header h2 {
+  margin-top: 20px;
+  font-family: var(--CormorantGaramond);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.1;
+}
+@media (min-width: 576px) {
+  #hero #hero-header h2 {
+    font-size: 40px;
+  }
+}
+#hero #hero-header p {
+  margin-top: 20px;
+  font-family: var(--HindMadurai);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#hero #hero-header p span {
+  padding-bottom: 1px;
+  font-style: italic;
+  border-bottom: 1px solid white;
+}
+#hero #hero-footer {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  #hero #hero-footer {
+    margin-top: 0;
+  }
+}
+#hero #hero-footer #left {
+  text-align: left;
+}
+#hero #hero-footer #right {
+  text-align: right;
+  color: #6c6c6c;
+  display: flex;
+  align-items: center;
+}
+#hero #hero-footer #right img {
+  padding-left: 10px;
+}
+
+/* MAIN - NAVBAR */
+nav {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+}
+@media (min-width: 992px) {
+  nav {
+    width: 100%;
+    margin-top: 80px;
+    position: static;
+    justify-content: space-between;
+  }
+}
+nav #hamburger-menu {
+  display: none;
+}
+nav #hamburger-menu:checked ~ #navbar {
+  margin-left: 0px;
+}
+nav .change-color {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+@media (min-width: 992px) {
+  nav label {
+    display: none;
+  }
+}
+nav .logo {
+  margin-left: auto;
+  color: #fff;
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  font-size: 25px;
+}
+@media (min-width: 992px) {
+  nav .logo {
+    margin-left: 0;
+    color: var(--bgc-primary);
+  }
+}
+nav .slogan {
+  display: none;
+  font-family: var(-HindMadurai);
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  nav .slogan {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  nav .slogan {
+    font-size: 1.4rem;
+  }
+}
+#navbar {
+  width: 53%;
+  margin-left: -250%;
+  position: absolute;
+  top: 60px;
+  font-weight: 600;
+  font-size: 22px;
+  transition: 500ms;
+  background-color: #fff;
+}
+@media (min-width: 992px) {
+  #navbar {
+    /* width: 50%; */
+    position: static;
+    margin-left: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  #navbar {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #navbar ul a {
+    /* width: 55%; */
+    width: 400px;
+  }
+}
+#navbar li {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid var(--bgc-primary);
+}
+@media (min-width: 992px) {
+  #navbar li {
+    border-top: none;
+  }
+}
+#navbar li a {
+  color: var(--bgc-primary);
+  font-family: var(--HindMadurai);
+  text-decoration: none;
+}
+#navbar li a img {
+  width: 25px;
+}
+
+/***** SECTION ARTICLES *****/
+#sct-articles {
+  min-width: 375px;
+  margin-top: 60px;
+}
+#start-ups p {
+  max-width: 1200px;
+  font-family: var(--Montserrat);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  #start-ups p {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 768px) {
+  #start-ups p {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #start-ups p {
+    font-size: 3.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #start-ups p {
+    font-size: 3.9rem;
+  }
+}
+#start-ups ul {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--HindMadurai);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  #start-ups ul {
+    width: 70%;
+    margin-left: auto;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  #start-ups ul {
+    width: 55%;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  #start-ups ul {
+    width: 600px;
+    font-size: 1.4rem;
+  }
+}
+
+#start-ups ul li a {
+  color: var(--bgc-primary);
+  text-decoration: none;
+}
+#start-ups ul li a span {
+  color: #fd4600;
+}
+
+#dobar-brand {
+  margin-top: 60px;
+}
+#dobar-brand .left {
+  width: 50%;
+  color: #fd4600;
+  font-family: var(--Montserrat);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  #dobar-brand .left {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  #dobar-brand .left {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  #dobar-brand .left {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #dobar-brand .left {
+    font-size: 4.7rem;
+  }
+}
+#dobar-brand .rigth {
+  width: 89%;
+  margin-top: 32px;
+  margin-left: auto;
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: justify;
+}
+@media (min-width: 576px) {
+  #dobar-brand .rigth {
+    width: 87%;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #dobar-brand .rigth {
+    font-size: 1.65rem;
+  }
+}
+@media (min-width: 992px) {
+  #dobar-brand .rigth {
+    width: 89%;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #dobar-brand .rigth {
+    font-size: 3rem;
+  }
+}
+/* FOOTER */
+#footer {
+  min-width: 375px;
+  margin-top: 60px;
+}
+#footer img {
+  width: 100%;
+}

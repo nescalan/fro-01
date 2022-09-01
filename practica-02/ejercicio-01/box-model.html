@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model Exercise</title>
+    <!-- 1. Reset Styles -->
+    <link rel="stylesheet" href="../../reset.css" />
+
+    <!-- 2. Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Hind+Madurai:wght@400;600;700&family=Montserrat:wght@400;600;700&display=family"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- 3. Local Styles -->
+    <link rel="stylesheet" href="./css/box-model.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <section id="hero">
+          <div id="hero-header">
+            <h1>Hi, I'm Joel</h1>
+            <h2>
+              I'm a visual designer currently with Superrb. I some times take
+              Freelance work.
+            </h2>
+            <p>
+              Take a scroll and have a <span>search</span> for some of my recent
+              projects. Don't forger your torch.
+            </p>
+          </div>
+          <div id="hero-footer">
+            <p id="left">Hover on the torjch before you go</p>
+            <div id="right">
+              <p>Don't fancy searching? - Abra-kadabra</p>
+              <img src="./img/magic-wand.svg" alt="magic wand" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <nav>
+          <input id="hamburger-menu" type="checkbox" name="hamburger-menu" />
+          <label for="hamburger-menu">
+            <img class="change-color" src="./img/menu.svg" alt="menu" />
+          </label>
+          <div class="logo">
+            <h1>Schwarz+Matt</h1>
+          </div>
+          <div class="slogan">Die Zukunft denken</div>
+          <ul id="navbar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">DE/EN</a></li>
+            <li>
+              <a href=""><img src="./img/user.svg" alt="usuario" /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="sct-articles" class="container">
+        <article id="start-ups">
+          <p>
+            Wir beratin Start-ups und Unternehmen in der digitalen
+            Transformation mit disruptivem Deken, ganzheitlichem
+          </p>
+
+          <ul>
+            <li><a href="">Usluge</a></li>
+            <li><a href="">Studio</a></li>
+            <li><a href="">Projekti</a></li>
+            <li><a href="">Tekstovi</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li>
+              <a href=""><span>Hr</span>/En</a>
+            </li>
+          </ul>
+        </article>
+
+        <article id="dobar-brand">
+          <div class="left">Dobar brand, dobar posao.</div>
+          <div class="rigth">
+            Kroz istrazivnaje, strategiju, dizajn i kampanje Filburg ce vam
+            stvoriti jak identitet koji donosi poslovne
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer id="footer">
+      <img src="./img/box-model-hero.png" alt="footer background" />
+    </footer>
+  </body>
+</html>
