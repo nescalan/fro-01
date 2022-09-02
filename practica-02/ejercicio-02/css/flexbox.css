@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  color: #fefefe;
+  background-image: linear-gradient(
+    to right,
+    #eb3449,
+    #ee3f47,
+    #f04946,
+    #f25344,
+    #f45c43
+  );
+}
+.card {
+  width: 50%;
+  border: 1px solid #ffffff;
+}
+.card-hours,
+.card-minutes,
+.card-seconds {
+  margin-top: 2rem;
+}
