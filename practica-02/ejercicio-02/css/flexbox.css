@@ -21,10 +21,45 @@ body {
 }
 .card {
   width: 50%;
+  min-width: 375px;
+  max-width: 1200px;
+  height: 65vh;
   border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+@media (min-width: 778px) {
+  .card {
+    width: 90%;
+    height: 17%;
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    width: 80%;
+  }
+}
+.card-days,
 .card-hours,
 .card-minutes,
 .card-seconds {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blueviolet;
+}
+.card p {
+  font-size: 4rem;
+}
+.card span {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-height: 992px) {
+  .card span {
+    font-size: 1.7rem;
+  }
 }
