@@ -92,3 +92,7 @@ button {
   border-radius: 10px;
   background-color: #a26b9d;
 }
+button:hover {
+  background-color: #803d7a;
+  cursor: pointer;
+}
