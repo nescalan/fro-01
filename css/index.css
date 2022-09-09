@@ -40,7 +40,6 @@ body {
   width: 90%;
   min-width: 375px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 @media (min-width: 576px) {
   .container {
@@ -292,13 +291,26 @@ body {
 
 /* FOOTER */
 footer {
+  padding: 2rem 0;
   background-color: var(--alternateBG);
 }
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 .flex-item {
   flex: 1 1 auto;
-  border: 1px solid red;
+  color: var(--primaryBG);
+  line-height: 1.5;
+}
+.flex-item > h2 {
+  margin-bottom: 1rem;
+  font-family: var(--title-2);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.flex-item p {
+  font-size: 1.3rem;
 }
