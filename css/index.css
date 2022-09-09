@@ -4,7 +4,7 @@
   --hover-font: #fa4529;
 
   /* Background Colors */
-  --primaryBG: #403f65;
+  --primaryBG: #020727;
   --secondaryBG: #84bbe4;
   --tertiaryBG: #d2ecfe;
   --alternateBG: #edce74;
@@ -288,10 +288,16 @@ body {
     max-width: 65%;
   }
 }
+@media (min-width: 1400px) {
+  .flex-wrapper {
+    max-width: 50%;
+  }
+}
 
 /* FOOTER */
 footer {
-  padding: 2rem 0;
+  margin-top: 6rem;
+  padding: 3rem 0;
   background-color: var(--alternateBG);
 }
 .footer-wrapper {
