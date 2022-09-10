@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  section {
+    width: 50%;
+  }
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .flex-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.flex-item {
+  height: 200px;
+  flex: 1 1 375px;
+}
+.yellow {
+  background-color: yellow;
+}
+@media (min-width: 576px) {
+  .yellow {
+    order: 2;
+  }
+}
+.blue {
+  background-color: blue;
+}
+@media (min-width: 576px) {
+  .blue {
+    order: 4;
+  }
+}
+.green {
+  background-color: green;
+}
+@media (min-width: 576px) {
+  .green {
+    order: 1;
+  }
+}
+.red {
+  background-color: red;
+}
+@media (min-width: 576px) {
+  .red {
+    order: 3;
+  }
+}

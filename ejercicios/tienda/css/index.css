@@ -1,0 +1,99 @@
+:root {
+  /* Colors */
+  --primary: #d1faff;
+  --secondary: #9bd1e5;
+  --terciary: #6a8eae;
+  --alternate: #57a773;
+  --alternate: #157145;
+  --primaryBG: ;
+  --secondaryBG: ;
+  --primary-text: #3d4246;
+  --secondary-text: #69727b;
+
+  /* Typography */
+  --title-1-ff: "Great Vibes", cursive;
+  --title-2-ff: "Great Vibes", cursive;
+  --title-3-ff: "Great Vibes", cursive;
+  --title-1-fs: 2.6rem;
+  --title-2-fs: 2.2rem;
+  --title-3-fs: 1.5rem;
+  --title-1-fc: #101112;
+  --title-2-fc: #57636c;
+  --title-3-fc: #101112;
+  --subtitle-1-ff: "Poppins", sans-serif;
+  --subtitle-2-ff: "Poppins", sans-serif;
+  --subtitle-1-fs: 1.8rem;
+  --subtitle-2-fs: 1.6rem;
+  --textbody-1-ff: "Biryani", sans-serif;
+  --textbody-2-ff: "Biryani", sans-serif;
+  --textdoby-1-fs: 1.4rem;
+  --textdoby-2-fs: 1.4rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  color: var(--primary-text);
+  font-family: var(--textbody-1-ff);
+}
+body {
+  font-size: 62.5%;
+}
+/* General */
+.redes {
+  color: #3d4246;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#sec-ofertas {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 992px) {
+  #sec-ofertas {
+    width: 50%;
+    margin-top: 15rem;
+    flex-direction: row;
+  }
+}
+#sec-ofertas .img-container {
+  flex: 1 1 auto;
+}
+@media (min-width: 992px) {
+  #sec-ofertas .img-container {
+    flex: 1 1 10%;
+  }
+}
+#sec-ofertas .img-container img {
+  width: 100%;
+}
+#sec-ofertas .info {
+  padding: 2rem;
+  flex: 0.5 1 50%;
+}
+#sec-ofertas .info h2 {
+  font-family: var(--title-2-ff);
+  font-weight: 500;
+  font-size: var(--title-2-fs);
+  text-align: center;
+}
+#sec-ofertas .info p {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+#sec-ofertas .info span {
+  color: var(--primary-text);
+}
+#sec-ofertas .info h3 {
+  margin-top: 1rem;
+  font-family: var(--title-3-ff);
+  font-weight: 500;
+  font-size: var(--title-3-fs);
+  text-align: center;
+}
