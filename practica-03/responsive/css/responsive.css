@@ -47,7 +47,7 @@ header #nav-desktop {
   header #nav-desktop {
     width: 60%;
     height: 100px;
-    padding-left: 54px;
+    padding-left: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,7 +78,13 @@ header #nav-desktop {
 @media (min-width: 980px) {
   .sec-blazrobar {
     height: 550px;
-    padding-left: 54px;
+    padding-left: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-blazrobar {
+    height: 575px;
+    padding-left: 125px;
   }
 }
 .sec-blazrobar .br-card {
@@ -88,6 +94,16 @@ header #nav-desktop {
 @media (min-width: 640px) {
   .sec-blazrobar .br-card {
     width: 79%;
+  }
+}
+@media (min-width: 980px) {
+  .sec-blazrobar .br-card {
+    width: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-blazrobar .br-card {
+    max-width: 675px;
   }
 }
 .br-card p {
@@ -102,7 +118,7 @@ header #nav-desktop {
 }
 @media (min-width: 980px) {
   .br-card p {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 }
 .br-card .br-link {
