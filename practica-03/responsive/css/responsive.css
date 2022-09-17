@@ -90,6 +90,7 @@ header #nav-desktop {
 .sec-blazrobar .br-card {
   width: 75%;
   color: #fff;
+  /* border: 1px solid white; */
 }
 @media (min-width: 640px) {
   .sec-blazrobar .br-card {
@@ -107,7 +108,7 @@ header #nav-desktop {
   }
 }
 .br-card p {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 1.5px;
 }
@@ -138,6 +139,20 @@ header #nav-desktop {
   .br-card .br-link span {
     font-size: 3.5rem;
   }
+}
+
+/* SEC-ROBIN */
+#sec-robin {
+  height: 75px;
+  display: flex;
+}
+#sec-robin .robin-left {
+  flex: 0.5 1 auto;
+  background-color: #211e27;
+}
+#sec-robin .robin-right {
+  flex: 0.5 1 auto;
+  background-color: #b55486;
 }
 
 /* SEC-GALLERY */
