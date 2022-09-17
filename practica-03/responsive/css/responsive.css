@@ -47,6 +47,7 @@ header #nav-desktop {
   header #nav-desktop {
     width: 60%;
     height: 100px;
+    padding-left: 54px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,25 +61,33 @@ header #nav-desktop {
   }
 }
 /* MAIN */
-/* SECTION BLAZ-ROBAR */
-.blaz-robar {
+/* SECTION BLAZROBAR */
+.sec-blazrobar {
   min-height: 175px;
-  padding: 55px 80px 55px 27px;
+  display: flex;
+  align-items: center;
+  padding-left: 27px;
   background-color: #009ab2;
 }
 @media (min-width: 640px) {
-  .blaz-robar {
-    padding-left: 50px;
-    padding-right: 0px;
+  .sec-blazrobar {
+    height: 347px;
+    padding-left: 45px;
   }
 }
-.blaz-robar .br-card {
+@media (min-width: 980px) {
+  .sec-blazrobar {
+    height: 550px;
+    padding-left: 54px;
+  }
+}
+.sec-blazrobar .br-card {
+  width: 75%;
   color: #fff;
-  border: 1px solid white;
 }
 @media (min-width: 640px) {
-  .br-card {
-    width: 455px;
+  .sec-blazrobar .br-card {
+    width: 79%;
   }
 }
 .br-card p {
@@ -88,13 +97,31 @@ header #nav-desktop {
 }
 @media (min-width: 640px) {
   .br-card p {
-    font-size: 4rem;
+    font-size: 3.7rem;
+  }
+}
+@media (min-width: 980px) {
+  .br-card p {
+    font-size: 6rem;
   }
 }
 .br-card .br-link {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  color: #ececec;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+@media (min-width: 640px) {
+  .br-card .br-link span {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 980px) {
+  .br-card .br-link span {
+    font-size: 3.5rem;
+  }
 }
 
 /* SEC-GALLERY */
