@@ -60,25 +60,50 @@ header #nav-desktop {
   }
 }
 /* MAIN */
-main .blaz-robar {
+/* SECTION BLAZ-ROBAR */
+.blaz-robar {
   min-height: 175px;
-  padding: 55px 27px;
+  padding: 55px 80px 55px 27px;
   background-color: #009ab2;
 }
-main .br-card {
-  color: #fff;
+@media (min-width: 640px) {
+  .blaz-robar {
+    padding-left: 50px;
+    padding-right: 0px;
+  }
 }
-main .br-card p {
+.blaz-robar .br-card {
+  color: #fff;
+  border: 1px solid white;
+}
+@media (min-width: 640px) {
+  .br-card {
+    width: 455px;
+  }
+}
+.br-card p {
   font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+@media (min-width: 640px) {
+  .br-card p {
+    font-size: 4rem;
+  }
+}
+.br-card .br-link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* sec-gallery */
-main .gallery {
+/* SEC-GALLERY */
+.gallery {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 980px) {
-  main .gallery {
+  .gallery {
     flex-direction: row;
   }
 }
