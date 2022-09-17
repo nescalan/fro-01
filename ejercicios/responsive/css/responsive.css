@@ -1,4 +1,66 @@
-nav {
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+header {
+  color: #ececec;
+  background-color: #373c3f;
+}
+header #nav-mobile {
+  height: 37px;
   display: flex;
+  padding-left: 4%;
   justify-content: space-between;
+}
+header #nav-mobile span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+header #nav-mobile .material-symbols-outlined {
+  min-width: 40px;
+  background-color: #202529;
+}
+@media (min-width: 640px) {
+  header #nav-mobile {
+    min-height: 75px;
+  }
+  header #nav-mobile .material-symbols-outlined {
+    min-width: 75px;
+    min-height: 75px;
+  }
+}
+header #nav-desktop {
+  display: none;
+}
+@media (min-width: 980px) {
+  header #nav-mobile {
+    display: none;
+  }
+  header #nav-desktop {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header #nav-desktop a {
+    display: block;
+    color: #ececec;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+/* MAIN */
+main .blaz-robar {
+  min-height: 175px;
+  background-color: #009ab2;
 }
