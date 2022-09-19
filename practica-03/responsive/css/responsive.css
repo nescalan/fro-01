@@ -15,14 +15,6 @@
     #1894a8,
     #148da2
   );
-  --primary-background: linear-gradient(
-    to right,
-    #25aabb,
-    #21a3b5,
-    #1c9baf,
-    #1894a8,
-    #148da2
-  );
   --secondary-background: #ececec;
 
   /* Text Colors */
@@ -140,7 +132,6 @@ header {
 .hero {
   width: 70%;
   margin-left: 26px;
-  border: 1px solid green;
 }
 @media (min-width: 640px) {
   .hero {
@@ -241,5 +232,82 @@ header {
   .hero .hero-link span:last-child {
     font-weight: 600;
     font-size: 2.9rem;
+  }
+}
+
+/* SECTION SEC-ROBIN-HOOD  */
+#sec-robin-hood {
+  height: 75px;
+  display: flex;
+}
+@media (min-width: 640px) {
+  #sec-robin-hood {
+    height: 150px;
+  }
+}
+@media (min-woidth: 980px) {
+  #sec-robin-hood {
+    height: 235px;
+  }
+}
+@media (min-width: 1024px) {
+  #sec-robin-hood {
+    height: 245px;
+  }
+}
+#sec-robin-hood .left {
+  width: 80%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-mid);
+}
+#sec-robin-hood .left p {
+  color: var(--alter-text-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (min-width: 640px) {
+  #sec-robin-hood .left p {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 980px) {
+  #sec-robin-hood .left p {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  #sec-robin-hood .left p {
+    font-size: 2.5rem;
+  }
+}
+#sec-robin-hood .right {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink);
+}
+#sec-robin-hood .right span {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+@media (min-width: 640px) {
+  #sec-robin-hood .right span {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 980px) {
+  #sec-robin-hood .right span {
+    font-weight: 500;
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  #sec-robin-hood .right span {
+    font-size: 7rem;
   }
 }
