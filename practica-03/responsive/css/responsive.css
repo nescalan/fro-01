@@ -5,6 +5,7 @@
   --gray-dark: #1a2024;
   --pink: #b55486;
   --indigo: #494d9f;
+  --purple: #5a06a2;
 
   /* Background Colors */
   --primary-background: linear-gradient(
@@ -235,7 +236,7 @@ header {
   }
 }
 
-/* SECTION SEC-ROBIN-HOOD  */
+/* SECTION: SEC-ROBIN-HOOD  */
 #sec-robin-hood {
   height: 75px;
   display: flex;
@@ -261,7 +262,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--gray-mid);
+  background-color: var(--gray-dark);
 }
 #sec-robin-hood .left p {
   color: var(--alter-text-color);
@@ -292,7 +293,7 @@ header {
 }
 #sec-robin-hood .right span {
   color: var(--secondary-text-color);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 @media (min-width: 640px) {
@@ -310,4 +311,79 @@ header {
   #sec-robin-hood .right span {
     font-size: 7rem;
   }
+}
+
+/* SECTION: GALLERY */
+#sec-gallery {
+  height: 830px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 640px) {
+  #sec-gallery {
+    height: 1660px;
+  }
+}
+@media (min-width: 980px) {
+  #sec-gallery {
+    height: 282px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  #sec-gallery {
+    height: 295px;
+  }
+}
+#sec-gallery .gallery-left,
+.gallery-center,
+.gallery-right {
+  height: 275px;
+}
+@media (min-width: 640px) {
+  #sec-gallery .gallery-left,
+  .gallery-center,
+  .gallery-right {
+    height: 550px;
+  }
+}
+@media (min-width: 980px) {
+  #sec-gallery .gallery-left,
+  .gallery-center,
+  .gallery-right {
+    flex: 1;
+    height: inherit;
+  }
+}
+#sec-gallery .gallery-left {
+  background-color: var(--indigo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sec-gallery .gallery-left span {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 3rem;
+}
+@media (min-width: 640px) {
+  #sec-gallery .gallery-left span {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 640px) {
+  #sec-gallery .gallery-left span {
+    font-size: 2.7rem;
+  }
+}
+#sec-gallery .gallery-center {
+  /* background-image: url(https://picsum.photos/id/101/300.webp); */
+  background-image: url(https://i.picsum.photos/id/249/3000/2000.jpg?hmac=U2oOCXdXUwt6ftKMC4icF6eS8dGDUZJM_0-qi0JEqjk);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#sec-gallery .gallery-right {
+  background-image: url(https://i.picsum.photos/id/454/4403/2476.jpg?hmac=pubXcBaPumNk0jElL63xrQYiSwQWA_DtS8uNNV8PmIE);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
