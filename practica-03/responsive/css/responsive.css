@@ -5,7 +5,7 @@
   --gray-dark: #1a2024;
   --pink: #b55486;
   --indigo: #494d9f;
-  --purple: #5a06a2;
+  --green: #088ca5;
 
   /* Background Colors */
   --primary-background: linear-gradient(
@@ -16,11 +16,11 @@
     #1894a8,
     #148da2
   );
-  --secondary-background: #ececec;
+  --secondary-background: #efefef;
 
   /* Text Colors */
   --primary-text-color: #505050;
-  --secondary-text-color: #fefefe;
+  --secondary-text-color: #ebebeb;
   --tertiary-text-color: #b5dae1;
   --alter-text-color: #8e889e;
 
@@ -316,12 +316,13 @@ header {
 /* SECTION: GALLERY */
 #sec-gallery {
   height: 830px;
+  height: 820px;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 640px) {
   #sec-gallery {
-    height: 1660px;
+    height: 1650px;
   }
 }
 @media (min-width: 980px) {
@@ -386,4 +387,91 @@ header {
   background-image: url(https://i.picsum.photos/id/454/4403/2476.jpg?hmac=pubXcBaPumNk0jElL63xrQYiSwQWA_DtS8uNNV8PmIE);
   background-size: cover;
   background-repeat: no-repeat;
+}
+/* SECTION: ARTICLE */
+#sec-article {
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--secondary-background);
+}
+@media (min-width: 640px) {
+  #sec-article {
+    height: 893px;
+  }
+}
+@media (min-width: 980px) {
+  #sec-article {
+    height: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  #sec-article {
+    height: 562px;
+  }
+}
+#sec-article .article-mobile {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  #sec-article .article-mobile {
+    width: 80%;
+  }
+}
+@media (min-width: 980px) {
+  #sec-article .article-mobile {
+    display: none;
+  }
+}
+#sec-article .article-mobile span {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 2rem;
+}
+@media (min-width: 640px) {
+  #sec-article .article-mobile span {
+    font-weight: 500;
+    font-size: 4rem;
+  }
+}
+#sec-article .article-mobile p {
+  margin-top: 25px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media (min-width: 640px) {
+  #sec-article .article-mobile p {
+    font-size: 2.9rem;
+    line-height: 1.6;
+  }
+}
+#sec-article .article-desktop {
+  display: none;
+}
+@media (min-width: 980px) {
+  #sec-article .article-desktop {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  #sec-article .article-desktop span {
+    color: var(--green);
+    font-weight: 600;
+    font-size: 2.7rem;
+  }
+  #sec-article .article-desktop .up,
+  .down {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #sec-article .article-desktop p {
+    width: 375px;
+    display: inline-flex;
+    font-weight: 500;
+    line-height: 1.6;
+  }
 }
