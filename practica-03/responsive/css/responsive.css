@@ -378,7 +378,6 @@ header {
   }
 }
 #sec-gallery .gallery-center {
-  /* background-image: url(https://picsum.photos/id/101/300.webp); */
   background-image: url(https://i.picsum.photos/id/249/3000/2000.jpg?hmac=U2oOCXdXUwt6ftKMC4icF6eS8dGDUZJM_0-qi0JEqjk);
   background-size: cover;
   background-repeat: no-repeat;
@@ -389,6 +388,7 @@ header {
   background-repeat: no-repeat;
 }
 /* SECTION: ARTICLE */
+/* article-mobile */
 #sec-article {
   height: 445px;
   display: flex;
@@ -432,7 +432,7 @@ header {
 }
 @media (min-width: 640px) {
   #sec-article .article-mobile span {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 4rem;
   }
 }
@@ -444,34 +444,66 @@ header {
 }
 @media (min-width: 640px) {
   #sec-article .article-mobile p {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     line-height: 1.6;
   }
 }
-#sec-article .article-desktop {
+
+/* article-desktop */
+.article-desktop {
   display: none;
 }
 @media (min-width: 980px) {
-  #sec-article .article-desktop {
-    width: 80%;
-    margin: 0 auto;
+  .article-desktop {
     display: block;
+    background-color: var(--secondary-background);
   }
-  #sec-article .article-desktop span {
+  .article-desktop span {
+    margin-left: 120px;
     color: var(--green);
     font-weight: 600;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
+    border: 1px solid red;
   }
-  #sec-article .article-desktop .up,
-  .down {
-    margin-top: 25px;
+  .article-desktop .flex-wrap {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    gap: 5%;
+    flex-wrap: wrap;
   }
-  #sec-article .article-desktop p {
-    width: 375px;
-    display: inline-flex;
+  .article-desktop .flex-wrap .flex-item {
+    margin-top: 25px;
+    flex: 0.5 1 40%;
     font-weight: 500;
     line-height: 1.6;
   }
 }
+/* SECTION: flex FLEXBOX */
+/* #flex {
+  display: none;
+}
+@media (min-width: 980px) {
+  #flex {
+    display: block;
+    background-color: var(--secondary-background);
+  }
+  #flex span {
+    font-weight: 500;
+    font-size: 4rem;
+  }
+  #flex .flex-wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+  #flex .flex-wrap .flex-item {
+    margin-top: 25px;
+    flex: 0.5 1 40%;
+    font-weight: 500;
+    line-height: 1.6;
+    border: 1px solid red;
+  }
+} */
