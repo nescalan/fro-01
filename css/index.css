@@ -54,12 +54,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+@media (min-width: 1200px) {
+  .header .logo-container {
+    height: 100px;
+  }
+}
 @media (min-width: 992px) {
   .header .logo-container label {
     display: none;
   }
 }
+
 .header #btn-menu {
   display: none;
 }
@@ -92,7 +97,19 @@ body {
 }
 @media (min-width: 992px) {
   .header .logo-desktop {
+    height: 125px;
     display: block;
+  }
+  .header .logo-desktop img {
+    height: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .header .logo-desktop {
+    height: inherit;
+  }
+  .header .logo-desktop img {
+    height: 150%;
   }
 }
 
@@ -169,6 +186,24 @@ body {
     margin-top: 3rem;
     font-size: 6.5rem;
     line-height: 8rem;
+    letter-spacing: 0.06rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero-title {
+    width: 50%;
+    margin-top: 5rem;
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: 0.06rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-title {
+    width: 40%;
+    margin-top: 5rem;
+    font-size: 5rem;
+    line-height: 6rem;
     letter-spacing: 0.06rem;
   }
 }
