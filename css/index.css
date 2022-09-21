@@ -46,6 +46,11 @@ body {
     width: 80%;
   }
 }
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 /* HEADER */
 .header .logo-container {
@@ -158,7 +163,7 @@ body {
 }
 
 /***** MAIN *****/
-/* Hero Section */
+/* SECTION: HERO */
 .hero {
   display: flex;
   flex-direction: column;
@@ -166,7 +171,7 @@ body {
 }
 
 .hero-title {
-  max-width: 700px;
+  max-width: 600px;
   margin-top: 6rem;
   display: block;
   font-family: var(--title-1);
@@ -235,7 +240,8 @@ body {
 
 /* Practice Section */
 #practicas,
-#ejercicios {
+#ejercicios,
+#proyecto-final {
   margin-top: 6rem;
   padding: 3rem 0;
   text-align: center;
@@ -244,12 +250,14 @@ body {
   background-color: var(--secondaryBG);
 }
 #practicas > p,
-#ejercicios > p {
+#ejercicios > p,
+#proyecto-final > p {
   font-family: var(--title-1);
   font-size: 4rem;
 }
 #practicas > h2,
-#ejercicios > h2 {
+#ejercicios > h2,
+#proyecto-final > h2 {
   margin-top: 5rem;
   font-family: var(--title-2);
   font-size: 2.3rem;
@@ -282,7 +290,8 @@ body {
 }
 @media (min-width: 1200px) {
   .card {
-    flex: 0.45 1 37.5rem;
+    /* flex: 0.45 1 37.5rem; */
+    flex-grow: 2;
   }
 }
 .card img {
@@ -325,25 +334,27 @@ body {
 }
 @media (min-width: 1400px) {
   .flex-wrapper {
-    max-width: 55%;
+    /* max-width: 55%; */
+    max-width: 1200px;
   }
 }
 
 /* FOOTER */
+
 footer {
-  margin-top: 6rem;
-  padding: 3rem 0;
-  background-color: var(--alternateBG);
+  /* margin-top: 6rem; */
+  padding: 60px 0;
+  background-color: var(--primaryBG);
 }
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: var(--secondaryTextColor);
   gap: 3rem;
 }
 .flex-item {
   flex: 1 1 auto;
-  color: var(--primaryBG);
   line-height: 1.5;
 }
 .flex-item > h2 {
