@@ -1,0 +1,48 @@
+:root {
+  /* Background Colors */
+  --primary-background: #fefefe;
+  --secondary-background: #1d75de;
+  --navbar-background: #000;
+
+  /* Button Colors */
+  --button-background: #0b0909;
+  --button-text-color: #fff;
+  --button-line-color: #fff;
+
+  /* Font Family */
+  --spotify-font: Helvetica, Arial, sans-serif;
+
+  /* Colors */
+  --gray-light: #343a3c;
+  --gray-mid: #21127e;
+  --gray-dark: #1a2024;
+  --pink: #b55486;
+  --indigo: #494d9f;
+  --green: #088ca5;
+
+  /* Text Colors */
+  --primary-text-color: #505050;
+  --secondary-text-color: #ebebeb;
+  --tertiary-text-color: #b5dae1;
+  --alter-text-color: #8e889e;
+}
+
+/* GENERAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--spotify-font);
+}
+
+/* HEADER  */
+header {
+  height: 54px;
+  background-color: var(--navbar-background);
+}
