@@ -60,12 +60,7 @@ header {
 }
 @media (min-width: 768px) {
   .menu-mobile {
-    width: 80%;
-  }
-}
-@media (min-width: 992px) {
-  .menu-mobile {
-    display: none;
+    max-width: 750px;
   }
 }
 .menu-mobile figure {
@@ -79,12 +74,10 @@ header {
 }
 .menu-mobile nav {
   width: 447px;
-  height: 625px;
+  height: 931px;
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: var(--alter-text-color);
+  background-color: var(--green);
   color: white;
-}
-.menu-mobile nav ul li a {
 }
