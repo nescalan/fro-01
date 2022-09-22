@@ -72,12 +72,15 @@ header {
 .menu-mobile span {
   color: white;
 }
-.menu-mobile nav {
+.menu-mobile .menu {
   width: 447px;
   height: 931px;
   display: flex;
   flex-direction: column;
   position: absolute;
+  top: 0;
   background-color: var(--green);
+}
+.menu-mobile .menu a {
   color: white;
 }
