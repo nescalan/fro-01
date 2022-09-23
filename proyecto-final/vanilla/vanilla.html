@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Premium - Vanilla</title>
+    <meta
+      name="description"
+      content="Spotify Premium es un servicio de música digital que te brinda acceso a millones de canciones sin anuncios."
+    />
+    <title>Spotify Premium - Vanilla</title>
     <link rel="stylesheet" href="../../css/reset.css" />
     <link
       rel="stylesheet"
@@ -18,19 +22,27 @@
         <figure>
           <img src="./img/spotify-mobile.svg" alt="Spotify Mobile Logo" />
         </figure>
-        <input id="btn-menu" type="checkbox" name="menu" />
+        <input id="btn-menu" type="checkbox" name="menu" onclick="openMenu()" />
         <label for="btn-menu">
           <span class="material-symbols-rounded"> menu </span>
         </label>
-        <nav class="menu">
+        <nav class="navbar-mobile">
           <ul>
-            <li><a href="#">Premium</a></li>
+            <input
+              id="btn-close"
+              type="checkbox"
+              name="close"
+              onclick="closeMenu()"
+            />
+            <label for="btn-close">
+              <span class="material-symbols-rounded"> close </span>
+            </label>
+            <li><a href="#premium">Premium</a></li>
             <li><a href="#">Ayuda</a></li>
             <li><a href="#">Descargar</a></li>
-          </ul>
-          <ul>
-            <li><a href="#`">Registrarse</a></li>
-            <li><a href="#`">Inicio</a></li>
+            <li><span></span></li>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Inicio</a></li>
           </ul>
           <figure>
             <img src="./img/spotify-mobile.svg" alt="Spotify Mobile Logo" />
@@ -38,7 +50,11 @@
         </nav>
       </div>
     </header>
-    <main><h1>Spotify - Vanilla</h1></main>
+    <main>
+      <br />
+    </main>
     <footer></footer>
+
+    <script src="./js/vanilla.js"></script>
   </body>
 </html>

@@ -9,16 +9,17 @@
   --button-text-color: #fff;
   --button-line-color: #fff;
 
-  /* Font Family */
-  --spotify-font: Helvetica, Arial, sans-serif;
-
   /* Colors */
   --gray-light: #343a3c;
   --gray-mid: #21127e;
   --gray-dark: #1a2024;
-  --pink: #b55486;
-  --indigo: #494d9f;
   --green: #088ca5;
+  --indigo: #494d9f;
+  --pink: #b55486;
+  --spotify-green: #1dd05d;
+
+  /* Font Family */
+  --spotify-font: Helvetica, Arial, sans-serif;
 
   /* Text Colors */
   --primary-text-color: #505050;
@@ -63,6 +64,11 @@ header {
     max-width: 750px;
   }
 }
+@media (min-width: 992px) {
+  .menu-mobile {
+    display: none;
+  }
+}
 .menu-mobile figure {
   width: 89px;
 }
@@ -71,16 +77,53 @@ header {
 }
 .menu-mobile span {
   color: white;
+  font-weight: 300;
+  font-size: 2em;
 }
-.menu-mobile .menu {
-  width: 447px;
-  height: 931px;
+.menu-mobile .navbar-mobile {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 40px 50px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 0;
-  background-color: var(--green);
+  right: -120%;
+  transition: 0.3s;
+  background-color: var(--navbar-background);
 }
-.menu-mobile .menu a {
+.menu-mobile .navbar-mobile #btn-close {
+  display: none;
+}
+.menu-mobile .navbar-mobile span {
+  max-width: 87%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+.menu-mobile .navbar-mobile li {
+  padding-bottom: 25px;
+}
+.menu-mobile .navbar-mobile a {
   color: white;
+  font-weight: 600;
+  font-size: 3.6rem;
+  text-decoration: none;
+}
+.menu-mobile .navbar-mobile a:hover {
+  color: var(--spotify-green);
+}
+.menu-mobile .navbar-mobile li:nth-child(6) span {
+  width: 25px;
+  border: 1px solid white;
+}
+.menu-mobile .navbar-mobile li:nth-child(n + 6) a {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+
+/* ****************************** */
+.menu-mobile .navbar-mobile {
+  /* display: none; */
 }
