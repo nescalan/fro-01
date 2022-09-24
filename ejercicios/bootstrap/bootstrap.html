@@ -13,11 +13,61 @@
       crossorigin="anonymous"
     />
 
-    <title>Bootstrap - Practice!</title>
+    <title>Bootstrap -5- Example</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello, world!</h1>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Control the column width, and how they should appear on different devices -->
+    <section class="container">
+      <div class="row">
+        <div class="col-*-*">col-1</div>
+        <div class="col-*-*">col-1</div>
+      </div>
+      <div class="row">
+        <div class="col-*-*">col-2</div>
+        <div class="col-*-*">col-2</div>
+        <div class="col-*-*">col-2</div>
+      </div>
+    </section>
+
+    <!-- Or let Bootstrap automatically handle the layout -->
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
     </div>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
