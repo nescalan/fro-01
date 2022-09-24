@@ -193,8 +193,8 @@ header {
 }
 /* SETCION: SEC-HERO */
 .sec-hero {
-  height: 500px;
-  padding: 65px 15px;
+  height: 433px;
+  padding: 60px 15px;
   color: white;
   background-color: var(--secondary-background);
 }
@@ -203,6 +203,48 @@ header {
   font-size: 2.5rem;
 }
 .sec-hero .hero p:last-child {
-  margin-top: 30px;
-  font-size: 1.7rem;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.sec-hero .buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-hero .buttons button:first-child,
+button:last-child {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--button-text-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 500px;
+  border: none;
+}
+.sec-hero .buttons button:first-child {
+  border: 2px solid var(--button-background);
+  background-color: var(--button-background);
+}
+.sec-hero .buttons button:first-child:hover {
+  background-color: var(--gray-dark);
+}
+.sec-hero .buttons button:last-child {
+  margin-top: 10px;
+  border: 2px solid var(--button-line-color);
+  background-color: var(--secondary-background);
+}
+.sec-hero .buttons button:last-child:hover {
+  background-color: var(--gray-dark);
+}
+.sec-hero .conditions {
+  margin-top: 50px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.sec-hero .conditions span {
+  text-decoration: underline;
 }
