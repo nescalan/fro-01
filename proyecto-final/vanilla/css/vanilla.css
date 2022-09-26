@@ -69,7 +69,12 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
   }
 }
 /* HEADER  */
@@ -150,7 +155,6 @@ header {
 }
 .menu-mobile .navbar-mobile li:nth-child(6) span {
   width: 25px;
-  border: 1px solid white;
 }
 .menu-mobile .navbar-mobile li:nth-child(n + 6) a {
   font-size: 2.8rem;
@@ -194,7 +198,7 @@ header {
 /* SETCION: SEC-HERO */
 .sec-hero {
   /* height: 480px; */
-  height: 433px;
+  height: 440px;
   color: white;
   background-color: var(--secondary-background);
 }
@@ -204,6 +208,21 @@ header {
 .sec-hero .hero p:first-child {
   font-weight: 800;
   font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .sec-hero .hero p:first-child {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .sec-hero .hero p:first-child {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .sec-hero .hero p:first-child {
+    font-size: 4rem;
+  }
 }
 .sec-hero .hero p:last-child {
   margin-top: 20px;
@@ -250,4 +269,26 @@ button:last-child {
 }
 .sec-hero .conditions span {
   text-decoration: underline;
+}
+/* SECTION: SEC-BENEFICIOS */
+#sec-beneficios .music-card .music-card-img {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.music-card {
+  display: flex;
+
+  /* OPTIONAL: Spacing between items */
+  margin: 0.5rem 0;
+}
+.music-card-img {
+  width: 2rem;
+}
+
+.music-card-description {
+  /* Take the remaining width */
+  flex: 1;
 }
