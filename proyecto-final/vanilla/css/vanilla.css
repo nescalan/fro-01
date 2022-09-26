@@ -42,7 +42,7 @@ body {
   font-family: var(--spotify-font);
 }
 .container {
-  width: 90%;
+  width: 93%;
   max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
@@ -193,13 +193,16 @@ header {
 }
 /* SETCION: SEC-HERO */
 .sec-hero {
+  /* height: 480px; */
   height: 433px;
-  padding: 60px 15px;
   color: white;
   background-color: var(--secondary-background);
 }
+.sec-hero .hero {
+  margin-top: 60px;
+}
 .sec-hero .hero p:first-child {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.5rem;
 }
 .sec-hero .hero p:last-child {
