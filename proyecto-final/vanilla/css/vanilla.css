@@ -309,24 +309,37 @@ button:last-child {
   text-decoration: underline;
 }
 /* SECTION: SEC-BENEFICIOS */
-#sec-beneficios .music-card .music-card-img {
-  width: 100px;
+#sec-beneficios h1 {
+  margin-top: 35px;
+  font-weight: 800;
+  font-size: 2.7rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #sec-beneficios h1 {
+    margin-top: 75px;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+#sec-beneficios .music-card {
+  display: flex;
+  padding-top: 30px;
+  margin: 0.5rem 0;
+  border: 1px solid red;
+}
+#sec-beneficios .music-card-img {
+  flex: 0.25 0 30px;
   height: 100px;
+  /* margin-top: 32px; */
   background-image: url(https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f);
   background-size: contain;
   background-repeat: no-repeat;
+  border: 1px solid green;
 }
-.music-card {
-  display: flex;
-
-  /* OPTIONAL: Spacing between items */
-  margin: 0.5rem 0;
-}
-.music-card-img {
-  width: 2rem;
-}
-
-.music-card-description {
+#sec-beneficios .music-card-description {
   /* Take the remaining width */
   flex: 1;
+  border: 1px solid blue;
 }
