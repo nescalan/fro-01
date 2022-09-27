@@ -2,6 +2,7 @@
   /* Background Colors */
   --primary-background: #fefefe;
   --secondary-background: #1d75de;
+  --tertiary-background: #1a69c7;
   --navbar-background: #000;
 
   /* Button Colors */
@@ -237,12 +238,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid white;
   }
 }
 .sec-hero .buttons button:first-child,
 button:last-child {
-  height: 50px;
+  height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +256,7 @@ button:last-child {
 @media (min-width: 768px) {
   .sec-hero .buttons button:first-child,
   button:last-child {
-    width: 150px;
+    width: 151px;
   }
 }
 .sec-hero .buttons button:first-child {
@@ -264,19 +264,25 @@ button:last-child {
   background-color: var(--button-background);
 }
 .sec-hero .buttons button:first-child:hover {
+  transform: scale(1.04, 1.04);
   background-color: var(--gray-dark);
-  transform: scale(1, 1);
 }
 .sec-hero .buttons button:last-child {
   margin-top: 10px;
   border: 2px solid var(--button-line-color);
   background-color: var(--secondary-background);
 }
+@media (min-width: 768px) {
+  .sec-hero .buttons button:last-child {
+    margin: 0 0 0 10px;
+  }
+}
 .sec-hero .buttons button:last-child:hover {
-  background-color: var(--gray-dark);
+  transform: scale(1.03, 1.03);
+  background-color: var(--tertiary-background);
 }
 .sec-hero .conditions {
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1.1rem;
   line-height: 1.5;
 }
