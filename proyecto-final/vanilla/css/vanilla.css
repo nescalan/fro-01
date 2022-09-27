@@ -198,13 +198,32 @@ header {
 }
 /* SETCION: SEC-HERO */
 .sec-hero {
-  /* height: 480px; */
-  height: 450px;
+  height: 433px;
   color: white;
   background-color: var(--secondary-background);
 }
+@media (min-width: 576px) {
+  .sec-hero {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .sec-hero {
+    height: 396px;
+  }
+}
+@media (min-width: 992px) {
+  .sec-hero {
+    height: 369px;
+  }
+}
+@media (min-width: 1200px) {
+  .sec-hero {
+    height: 385px;
+  }
+}
 .sec-hero .hero p:first-child {
-  margin-top: 60px;
+  margin-top: 55px;
   font-weight: 800;
   font-size: 2.8rem;
 }
@@ -216,7 +235,7 @@ header {
   }
 }
 .sec-hero .hero p:last-child {
-  margin-top: 35px;
+  margin-top: 25px;
   font-size: 1.8rem;
   line-height: 1.5;
 }
@@ -228,7 +247,7 @@ header {
   }
 }
 .sec-hero .buttons {
-  margin-top: 47px;
+  margin-top: 17px;
   display: flex;
   flex-direction: column;
 }
@@ -282,7 +301,7 @@ button:last-child {
   background-color: var(--tertiary-background);
 }
 .sec-hero .conditions {
-  margin-top: 40px;
+  margin-top: 42px;
   font-size: 1.1rem;
   line-height: 1.5;
 }
