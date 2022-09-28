@@ -1,6 +1,6 @@
 :root {
   /* Background Colors */
-  --primary-background: #fefefe;
+  --primary-background: #efefef;
   --secondary-background: #1d75de;
   --tertiary-background: #1a69c7;
   --navbar-background: #000;
@@ -220,18 +220,19 @@ header {
     height: 385px;
   }
 }
-.sec-hero .hero p:first-child {
+.sec-hero .hero h1 {
   margin-top: 55px;
   font-weight: 800;
   font-size: 2.8rem;
 }
+
 @media (min-width: 576px) {
-  .sec-hero .hero p:first-child {
+  .sec-hero .hero h1 {
     margin-top: 59px;
   }
 }
 @media (min-width: 768px) {
-  .sec-hero .hero p:first-child {
+  .sec-hero .hero h1 {
     margin-top: 75px;
     font-size: 4rem;
   }
@@ -316,15 +317,18 @@ button:last-child {
   text-decoration: underline;
 }
 /* SECTION: SEC-BENEFICIOS */
-#sec-beneficios h1 {
-  margin-top: 37px;
+#sec-beneficios,
+#sec-plan {
+  padding: 75px 0;
+}
+#sec-beneficios h2,
+#sec-plan h2 {
   font-weight: 800;
   font-size: 2.7rem;
   text-align: center;
 }
 @media (min-width: 768px) {
   #sec-beneficios h1 {
-    margin-top: 75px;
     font-weight: 800;
     font-size: 4rem;
     text-align: center;
@@ -362,12 +366,12 @@ button:last-child {
 }
 @media (min-width: 768px) {
   #sec-beneficios .music-card {
-    width: 350px;
+    width: 335px;
   }
 }
 @media (min-width: 992px) {
   #sec-beneficios .music-card {
-    width: 450px;
+    width: 435px;
   }
 }
 #sec-beneficios .music-card-img-1,
@@ -410,6 +414,9 @@ button:last-child {
   font-size: 1.55rem;
 }
 /* CARD: Music Card Desktop */
+#sec-beneficios .beneficios-desktop {
+  display: none;
+}
 @media (min-width: 1200px) {
   #sec-beneficios .beneficios-desktop {
     display: flex;
@@ -458,4 +465,99 @@ button:last-child {
   #sec-beneficios .card-desktop-content span:last-child {
     margin-top: 15px;
   }
+}
+
+/* CARD: Plan */
+#sec-plan {
+  background-color: var(--primary-background);
+}
+#sec-plan .container > p {
+  margin-top: 7px;
+  text-align: center;
+  line-height: 1.5;
+}
+#sec-plan .mobile-columns {
+  max-width: 440px;
+  padding: 35px 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 1px solid red;
+}
+#sec-plan .mobile-columns-column {
+  padding: 10px;
+  margin: 0 8px;
+  /* flex: 0 0 350px; */
+  /* Layout each column */
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  background-color: var(--button-text-color);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#sec-plan .mobile-columns-column > span:nth-child(1) {
+  width: 95px;
+  height: 23px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  color: var(--button-text-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: var(--secondary-background);
+}
+#sec-plan .mobile-columns-column > span:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+#sec-plan .mobile-columns-column > span:nth-child(4) {
+  margin-top: 5px;
+  display: inline-flex;
+}
+
+#sec-plan .mobile-columns-content {
+  margin-top: 20px;
+  padding-top: 20px;
+  flex: 1;
+  border-top: 2px solid var(--alter-text-color);
+}
+#sec-plan .mobile-columns-content li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 7px;
+}
+#sec-plan .mobile-columns-column button {
+  height: 50px;
+  margin-top: 13px;
+  color: var(--button-text-color);
+  font-weight: 800;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 500px;
+  background-color: var(--button-background);
+}
+#sec-plan .mobile-columns-column > p:last-child {
+  margin-top: 12px;
+  color: #535353;
+  font-size: 1.05rem;
+}
+#sec-plan .mobile-columns-column > p span {
+  text-decoration: underline;
+}
+
+/* ************************************ */
+.parent {
+  display: flex;
+  /* flex-direction: column; */
+}
+.child {
+  flex: 0 1 75px; /* Default flex value */
+  border: 1px solid red;
 }
