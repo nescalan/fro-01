@@ -3,5 +3,5 @@ const openMenu = () => {
 };
 
 const closeMenu = () => {
-  document.querySelector(".navbar-mobile").style.right = "-170%";
+  document.querySelector(".navbar-mobile").style.right = "-200%";
 };
