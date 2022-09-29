@@ -1,0 +1,16 @@
+/* GLOBAL STYLES */
+.bg-black {
+    background-color: #000;
+}
+
+
+/* NAVBAR */
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* SECTION: sec-premium */
+#sec-premium .jumbotron {
+    background-color: #1d75de;
+}
