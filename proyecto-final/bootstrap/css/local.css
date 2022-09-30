@@ -1,23 +1,21 @@
 /* GLOBAL STYLES */
 .bg-black {
-    background-color: #000;
+  background-color: #000;
 }
 header {
-    height: 80px;
+  /* height: 80px; */
 }
-
 
 /* NAVBAR */
 .navbar .navbar-brand {
-    color: #ffffff;
-    font-size: 2rem;
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 /* SECTION: sec-premium */
 #sec-premium {
-    background-color: #1d75de;
-
+  background-color: #1d75de;
 }
 #sec-premium .jumbotron {
-    background-color: #1d75de;
+  background-color: #1d75de;
 }
