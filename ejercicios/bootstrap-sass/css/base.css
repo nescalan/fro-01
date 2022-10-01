@@ -1,0 +1,12 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+#sec-banner {
+  height: 70vh;
+  background-color: #0a99b0;
+}
+#sec-banner h1,
+#sec-banner h2 {
+  font-size: 2rem;
+}/*# sourceMappingURL=base.css.map */

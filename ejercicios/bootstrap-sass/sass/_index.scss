@@ -1,0 +1,11 @@
+html {
+  font-family: $tipografia-principal;
+}
+#sec-banner {
+  height: 70vh;
+  background-color: $celeste;
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+}
