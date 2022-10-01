@@ -1,0 +1,41 @@
+/* GLOBAL STYLES */
+.bg-black {
+  background-color: #000;
+}
+header {
+  /* height: 80px; */
+}
+
+/* NAVBAR */
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+/* SECTION: sec-premium */
+#sec-premium {
+  background-color: #1d75de;
+}
+#sec-premium .jumbotron {
+  background-color: #1d75de;
+}
+#sec-premium .jumbotron h1 {
+  font-size: 1.64rem;
+}
+#sec-premium .jumbotron p {
+  font-size: 1.125rem;
+}
+#sec-premium .buttons .btn-dark,
+.btn-link {
+  height: 50px;
+  border-radius: 500px;
+}
+#sec-premium .buttons .btn-link {
+  border: 1px solid white;
+}
+#sec-premium .buttons .btn-link:hover {
+  background-color: #146ad3;
+}
+#sec-premium .buttons-sm {
+  display: none;
+}
