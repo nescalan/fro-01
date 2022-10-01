@@ -3,9 +3,14 @@ html {
 }
 #sec-banner {
   height: 70vh;
+  color: $blanco;
   background-color: $celeste;
   h1,
   h2 {
     font-size: 2rem;
+  }
+  a {
+    color: $blanco;
+    text-decoration: none;
   }
 }
