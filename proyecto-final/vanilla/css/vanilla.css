@@ -190,6 +190,9 @@ header {
     font-weight: 600;
     text-decoration: none;
   }
+  .menu-desktop .navbar-desktop a:hover {
+    color: var(--spotify-green);
+  }
   .menu-desktop .navbar-desktop span {
     border-left: 1px solid #fff;
   }
@@ -334,6 +337,12 @@ button:last-child {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  #sec-beneficios h2 {
+    font-size: 4rem;
+  }
+}
+
 #sec-beneficios .beneficios-flex-wrap {
   display: flex;
   flex-direction: column;
@@ -471,6 +480,11 @@ button:last-child {
 #sec-plan {
   background-color: var(--primary-background);
 }
+@media (min-width: 1200px) {
+  #sec-plan .container h2 {
+    font-size: 4rem;
+  }
+}
 #sec-plan .container > p {
   margin-top: 7px;
   text-align: center;
@@ -484,7 +498,11 @@ button:last-child {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  border: 1px solid red;
+}
+@media (min-width: 1200px) {
+  #sec-plan .mobile-columns {
+    display: none;
+  }
 }
 #sec-plan .mobile-columns-column {
   padding: 10px;
@@ -496,7 +514,7 @@ button:last-child {
   border-radius: 7px;
   background-color: var(--button-text-color);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    rgba(14, 30, 37, 0.32) 0px 7px 13px 0px;
 }
 #sec-plan .mobile-columns-column > span:nth-child(1) {
   width: 95px;
@@ -554,12 +572,56 @@ button:last-child {
   text-decoration: underline;
 }
 
-/* ************************************ */
-.parent {
-  display: flex;
-  /* flex-direction: column; */
+/* Desktop-Columns */
+#sec-plan .desktop-columns {
+  padding: 35px 0;
+  display: none;
 }
-.child {
-  flex: 0 1 75px; /* Default flex value */
-  border: 1px solid red;
+@media (min-width: 1200px) {
+  #sec-plan .desktop-columns {
+    display: flex;
+  }
+}
+
+/* ***************** FOOTER ******************* */
+footer {
+  padding: 80px 0 50px;
+  background-color: var(--navbar-background);
+}
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-info-logo,
+.footer-info-company,
+.footer-info-community,
+.footer-info-links,
+.footer-info-social-media {
+  flex: 0 0 100%;
+  border: 1px solid white;
+}
+.footer-info-logo img {
+  width: 90px;
+  height: 30px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .footer-info-company,
+  .footer-info-community,
+  .footer-info-links {
+    flex: 1 0 33.33%;
+    border: 1px solid white;
+  }
+}
+@media (min-width: 992px) {
+  .footer-info-logo,
+  .footer-info-company,
+  .footer-info-community,
+  .footer-info-links {
+    flex: 1 0 15%;
+    border: 1px solid white;
+  }
+  .footer-info-social-media {
+    flex: 1 0 40%;
+  }
 }
