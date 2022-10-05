@@ -1,0 +1,77 @@
+.bg-black {
+  background-color: #000;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.navbar-nav li:nth-child(1) a,
+.navbar-nav li:nth-child(2) a,
+.navbar-nav li:nth-child(3) a {
+  font-size: 2rem;
+}
+.navbar-nav li:nth-child(4) a,
+.navbar-nav li:nth-child(5) a {
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-item a:hover {
+  color: #1ed760 !important;
+}
+
+#sec-premium {
+  background-color: #1d75de;
+}
+#sec-premium .jumbotron {
+  background-color: #1d75de;
+}
+#sec-premium .jumbotron h1 {
+  font-size: 1.64rem;
+}
+@media (min-width: 768px) {
+  #sec-premium .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+}
+#sec-premium .jumbotron p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  #sec-premium .jumbotron p {
+    font-size: 1.5rem;
+  }
+}
+#sec-premium .jumbotron .terms {
+  margin-top: 30px;
+  font-size: 0.6875rem;
+}
+#sec-premium .jumbotron .terms a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+#sec-premium .buttons .btn-dark,
+#sec-premium .buttons .btn-link {
+  height: 50px;
+  border-radius: 500px;
+}
+#sec-premium .buttons .btn-link {
+  margin-top: 10px;
+  border: 1px solid white;
+}
+@media (min-width: 768px) {
+  #sec-premium .buttons .btn-link {
+    margin: 0 0 0 10px;
+  }
+}
+#sec-premium .buttons .btn-link:hover {
+  background-color: #146ad3;
+}
+#sec-premium .buttons .btn-dark:hover,
+#sec-premium .buttons .btn-link:hover {
+  transform: scale(1.04, 1.04);
+}
+#sec-premium .buttons-sm {
+  display: none;
+}/*# sourceMappingURL=base.css.map */
