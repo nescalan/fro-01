@@ -38,7 +38,7 @@
 #sec-premium {
   background-color: $spotify-blue;
 
-  // SECTION: sec-premium --> Jumbotron
+  // DIV: Component --> Jumbotron
   .jumbotron {
     padding-top: 58px;
     background-color: $spotify-blue;
@@ -96,16 +96,12 @@
       }
     }
 
-    // SECTION: sec-premium --> Buttons
+    // DIV: Terms
     .terms {
       padding-top: 15px;
       a {
         line-height: 1.5;
       }
     }
-  }
-
-  .buttons-sm {
-    display: none;
   }
 }
