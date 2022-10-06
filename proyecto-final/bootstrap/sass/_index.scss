@@ -3,7 +3,6 @@
 }
 // Navbar: Styles
 .navbar .navbar-brand {
-  color: #ffffff;
   font-size: 2rem;
 }
 .navbar-nav {
@@ -16,16 +15,32 @@
   li:nth-child(5) a {
     font-size: 1.5rem;
   }
+  @media screen {
+    li:nth-child(1) a,
+    li:nth-child(2) a,
+    li:nth-child(3) a,
+    li:nth-child(4) a,
+    li:nth-child(5) a {
+      padding: 18px 25px !important;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+  .nav-item a {
+    color: white !important;
+  }
   .nav-item a:hover {
     color: $spotify-green !important;
   }
 }
 
 // SECTION: sec-premium
-
 #sec-premium {
   background-color: $spotify-blue;
+
+  // SECTION: sec-premium --> Jumbotron
   .jumbotron {
+    padding-top: 58px;
     background-color: $spotify-blue;
     h1 {
       font-size: 1.64rem;
@@ -36,6 +51,7 @@
       }
     }
     p {
+      margin: 30px 0;
       font-size: 1.125rem;
       font-weight: 500;
     }
@@ -52,28 +68,40 @@
       color: #ffffff !important;
       text-decoration: underline;
     }
-  }
-  .buttons {
-    .btn-dark,
-    .btn-link {
-      height: 50px;
-      border-radius: 500px;
-    }
-    .btn-link {
-      margin-top: 10px;
-      border: 1px solid white;
-    }
-    @media (min-width: 768px) {
+
+    // SECTION: sec-premium --> Buttons
+    .buttons {
+      padding-top: 0px;
+      padding-bottom: 0px !important;
+      .btn-dark,
       .btn-link {
-        margin: 0 0 0 10px;
+        height: 50px;
+        border-radius: 500px;
+      }
+      .btn-link {
+        margin-top: 10px;
+        border: 1px solid white;
+      }
+      @media (min-width: 768px) {
+        .btn-link {
+          margin: 0 0 0 10px;
+        }
+      }
+      .btn-link:hover {
+        background-color: #146ad3;
+      }
+      .btn-dark:hover,
+      .btn-link:hover {
+        transform: scale(1.04, 1.04);
       }
     }
-    .btn-link:hover {
-      background-color: #146ad3;
-    }
-    .btn-dark:hover,
-    .btn-link:hover {
-      transform: scale(1.04, 1.04);
+
+    // SECTION: sec-premium --> Buttons
+    .terms {
+      padding-top: 15px;
+      a {
+        line-height: 1.5;
+      }
     }
   }
 
