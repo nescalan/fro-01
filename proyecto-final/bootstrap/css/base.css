@@ -96,4 +96,13 @@
 }
 #sec-premium .jumbotron .terms a {
   line-height: 1.5;
+}
+
+#sec-benefits {
+  padding-top: 15px;
+  color: #000;
+}
+#sec-benefits h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }/*# sourceMappingURL=base.css.map */
