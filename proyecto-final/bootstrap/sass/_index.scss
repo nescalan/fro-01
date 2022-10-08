@@ -41,6 +41,8 @@
   // DIV: Component --> Jumbotron
   .jumbotron {
     padding-top: 58px;
+    background-color: $spotify-blue;
+
     h1 {
       font-size: 1.64rem;
     }
@@ -107,10 +109,26 @@
 
 // SECTION: sec-benefits
 .sec-benefits {
-  padding-top: 15px;
   color: #000;
   .h2 {
-    // font-size: 1rem !important;
+    font-size: 1.75rem !important;
     font-weight: 600;
+  }
+  @media (min-width:768px) {
+    .h2 {
+      margin-top: 30px;
+      display: inline-flex;
+      font-size: 2.5rem !important;
+    }
+    
+  }
+  .benefits-mobile {
+    margin-top: 30px;
+    border: 1px solid red;
+  }
+
+
+  .benefits-desktop {
+    display: none;
   }
 }

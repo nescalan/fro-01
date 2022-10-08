@@ -13,8 +13,7 @@
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/base.css" />
-
+    <link rel="stylesheet" href="./css/base.css">
     <link
       rel="icon"
       type="image/png"
@@ -23,7 +22,7 @@
     />
   </head>
 
-  <body>
+  <body ng-controller="testCtrl">
     <header class="bg-black">
       <!-- NAVBAR: DESKTOP VIEW -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-black container">
@@ -126,12 +125,11 @@
               <span class="h2">Beneficios de Premium</span>
             </div>
         </div>
-        <div class="benefits-mobile">
-          <div class="container">
+        <div class="benefits-mobile container">
             <div class="row">
               <div class="col-lg-4 col-md-6 col-12">
-                <ul class="list-unstyled">
-                  <li class="media">
+                <ul class=" list-unstyled">
+                  <li class="d-flex media">
                     <img 
                     class="mr-3 rounded-circle" 
                     alt="descarga tu musica" 
@@ -196,7 +194,6 @@
                 </ul>
               </div>
             </div>
-          </div>
         </div>
       
         <div class="container benefits-desktop">
@@ -247,7 +244,6 @@
             </div>
           </div>
         </div>
-      </section>
       
       <hr>
 
