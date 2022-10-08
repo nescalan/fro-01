@@ -191,7 +191,7 @@
   font-weight: 600;
   font-size: 1.5rem;
 }
-.sec-choose-plan .cards.container .card p {
+.sec-choose-plan .cards.container .card > p {
   margin: 0;
   display: inline-flex;
 }
@@ -202,12 +202,20 @@
 .sec-choose-plan .cards.container .card-body {
   padding: 0;
 }
-.sec-choose-plan .cards.container .card-body .car-text {
+.sec-choose-plan .cards.container .card-body .card-text {
   padding: 0;
+}
+.sec-choose-plan .cards.container .card-body .card-text dd {
+  display: flex;
+  flex-direction: row;
+}
+.sec-choose-plan .cards.container .card-body .card-text dd p {
+  margin: 0;
 }
 .sec-choose-plan .cards.container .card-body button {
   width: 100%;
   height: 48px;
+  margin-bottom: 16px;
   border-radius: 500px;
   font-weight: 600;
   font-size: 14px;
@@ -216,4 +224,10 @@
 }
 .sec-choose-plan .cards.container .card-body button:hover {
   transform: scale(1.03, 1.03);
+}
+.sec-choose-plan .cards.container .card-body p {
+  font-size: 12px;
+}
+.sec-choose-plan .cards.container .card-body span {
+  text-decoration: underline;
 }/*# sourceMappingURL=base.css.map */
