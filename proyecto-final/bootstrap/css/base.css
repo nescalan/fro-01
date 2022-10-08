@@ -290,5 +290,15 @@
 }
 .main-footer .footer-last {
   color: #919496;
-  font-size: 12px;
+  font-size: 10px;
+}
+.main-footer .footer-last .copy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .footer-last .copy dl:first-child {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=base.css.map */
