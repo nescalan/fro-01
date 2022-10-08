@@ -125,14 +125,14 @@
   .benefits-mobile {
     margin-top: 30px;
     li {
+      height: 142px;
       display: flex;
       align-items: center;
     }
-    img {
-      border: 1px solid green;
-    }
     .media-body {
-      border: 1px solid blue;
+      p {
+        margin-top: 10px;
+      }
     }
   }
   @media (min-width: 1200px) {
@@ -148,6 +148,10 @@
   @media (min-width: 1200px) {
     .benefits-desktop {
       display: block;
+      h3 {
+        margin-top: 50px;
+        font-size: 1.3125rem;
+      }
     }
   }
 }

@@ -116,14 +116,12 @@
   margin-top: 30px;
 }
 .sec-benefits .benefits-mobile li {
+  height: 142px;
   display: flex;
   align-items: center;
 }
-.sec-benefits .benefits-mobile img {
-  border: 1px solid green;
-}
-.sec-benefits .benefits-mobile .media-body {
-  border: 1px solid blue;
+.sec-benefits .benefits-mobile .media-body p {
+  margin-top: 10px;
 }
 @media (min-width: 1200px) {
   .sec-benefits .benefits-mobile {
@@ -136,5 +134,9 @@
 @media (min-width: 1200px) {
   .sec-benefits .benefits-desktop {
     display: block;
+  }
+  .sec-benefits .benefits-desktop h3 {
+    margin-top: 50px;
+    font-size: 1.3125rem;
   }
 }/*# sourceMappingURL=base.css.map */
