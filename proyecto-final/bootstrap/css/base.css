@@ -159,21 +159,21 @@
 .sec-choose-plan .h3 {
   font-size: 1rem !important;
 }
-.sec-choose-plan .cards.container {
+.sec-choose-plan .cards {
   width: 450px;
   padding: 75px 0;
 }
 @media (min-width: 1200px) {
-  .sec-choose-plan .cards.container {
+  .sec-choose-plan .cards {
     width: 100%;
   }
 }
-.sec-choose-plan .cards.container .card {
+.sec-choose-plan .cards .card {
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.sec-choose-plan .cards.container .card > span:nth-child(1) {
+.sec-choose-plan .cards .card > span:nth-child(1) {
   width: 90px;
   height: 25px;
   display: flex;
@@ -185,34 +185,34 @@
   border-radius: 3px;
   background-color: #1d75de;
 }
-.sec-choose-plan .cards.container .card > span:nth-child(2) {
+.sec-choose-plan .cards .card > span:nth-child(2) {
   margin-top: 10px;
   display: inline-flex;
   font-weight: 600;
   font-size: 1.5rem;
 }
-.sec-choose-plan .cards.container .card > p {
+.sec-choose-plan .cards .card > p {
   margin: 0;
   display: inline-flex;
 }
-.sec-choose-plan .cards.container .card hr {
+.sec-choose-plan .cards .card hr {
   height: 2px;
   border: 2px solid var(#000);
 }
-.sec-choose-plan .cards.container .card-body {
+.sec-choose-plan .cards .card-body {
   padding: 0;
 }
-.sec-choose-plan .cards.container .card-body .card-text {
+.sec-choose-plan .cards .card-body .card-text {
   padding: 0;
 }
-.sec-choose-plan .cards.container .card-body .card-text dd {
+.sec-choose-plan .cards .card-body .card-text dd {
   display: flex;
   flex-direction: row;
 }
-.sec-choose-plan .cards.container .card-body .card-text dd p {
+.sec-choose-plan .cards .card-body .card-text dd p {
   margin: 0;
 }
-.sec-choose-plan .cards.container .card-body button {
+.sec-choose-plan .cards .card-body button {
   width: 100%;
   height: 48px;
   margin-bottom: 16px;
@@ -222,17 +222,73 @@
   border: none;
   background-color: #000;
 }
-.sec-choose-plan .cards.container .card-body button:hover {
+.sec-choose-plan .cards .card-body button:hover {
   transform: scale(1.03, 1.03);
 }
-.sec-choose-plan .cards.container .card-body p {
+.sec-choose-plan .cards .card-body p {
   font-size: 12px;
 }
-.sec-choose-plan .cards.container .card-body span {
+.sec-choose-plan .cards .card-body span {
   text-decoration: underline;
 }
 
-footer {
-  padding: 80px 0 50px;
+.main-footer {
+  padding: 70px 0 50px;
   background-color: #000;
+}
+.main-footer .footer-middle img {
+  width: 90px;
+}
+@media (min-width: 992px) {
+  .main-footer .footer-middle img {
+    width: 145px;
+  }
+}
+.main-footer .footer-middle .footer-pad {
+  margin: 50px 0 22px;
+}
+@media (min-width: 992px) {
+  .main-footer .footer-middle .footer-pad {
+    margin: 0;
+  }
+}
+.main-footer .footer-middle .footer-pad h4 {
+  color: #919496;
+  font-weight: 600;
+  font-size: 12px;
+}
+.main-footer .footer-middle .footer-pad a {
+  padding: 3px 0 15px;
+  display: inline-flex;
+  color: #fff;
+  text-decoration: none;
+}
+.main-footer .footer-middle .footer-pad a:hover {
+  color: #1ed760;
+}
+.main-footer .footer-middle .social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .main-footer .footer-middle .social-network {
+    display: flex;
+    justify-content: end;
+  }
+}
+.main-footer .footer-middle .social-network li {
+  margin: 0 5px;
+  display: inline;
+}
+.main-footer .footer-middle .social-network li img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.main-footer .footer-last {
+  color: #919496;
+  font-size: 12px;
 }/*# sourceMappingURL=base.css.map */
