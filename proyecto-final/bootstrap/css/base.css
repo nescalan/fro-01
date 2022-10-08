@@ -230,4 +230,9 @@
 }
 .sec-choose-plan .cards.container .card-body span {
   text-decoration: underline;
+}
+
+footer {
+  padding: 80px 0 50px;
+  background-color: #000;
 }/*# sourceMappingURL=base.css.map */
