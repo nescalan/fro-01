@@ -114,21 +114,40 @@
     font-size: 1.75rem !important;
     font-weight: 600;
   }
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     .h2 {
       margin-top: 30px;
       display: inline-flex;
       font-size: 2.5rem !important;
     }
-    
   }
+  // DIV: Benefits Mobile
   .benefits-mobile {
     margin-top: 30px;
-    border: 1px solid red;
+    li {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      border: 1px solid green;
+    }
+    .media-body {
+      border: 1px solid blue;
+    }
+  }
+  @media (min-width: 1200px) {
+    .benefits-mobile {
+      display: none;
+    }
   }
 
-
+  // DIV: Benefits Desktop
   .benefits-desktop {
     display: none;
+  }
+  @media (min-width: 1200px) {
+    .benefits-desktop {
+      display: block;
+    }
   }
 }
